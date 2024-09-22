@@ -1,3 +1,17 @@
+<?php
+
+require_once('config/status_codes.php');
+
+$random_indexes = array_rand($status_codes, 4);
+
+foreach ($random_indexes as $index) {
+  $options[] = $status_codes[$index];
+}
+
+$question = $options[mt_rand(0, 3)];
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -14,7 +28,7 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <a class="header__logo" href="/php04">
+      <a class="header__logo" href="/">
         Status Code Quiz
       </a>
     </div>

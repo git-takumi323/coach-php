@@ -1,4 +1,5 @@
 <?php
+
 $status_codes = [
   [
     'code' => '102',
@@ -56,6 +57,3 @@ $status_codes = [
     'description' => '一時的にサーバにアクセスが出来ない'
   ]
 ];
-echo('<pre>');
-var_dump($status_codes);
-echo('</pre>');
